@@ -1,7 +1,5 @@
 
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -12,9 +10,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-lg">
-              <Code className="h-6 w-6 text-primary-foreground" />
+              <img src="/my-logo.svg" alt="Logo" className="h-8 w-8" />
             </div>
-            <span className="font-bold text-xl gradient-text">Portfolio</span>
           </Link>
 
           {/* Navigation */}

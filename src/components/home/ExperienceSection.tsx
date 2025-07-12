@@ -1,29 +1,26 @@
 
-import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Briefcase, Calendar } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Senior Software Engineer',
-    company: 'Tech Solutions Inc.',
-    period: '2022 - Present',
-    description: 'Lead development of scalable web applications using React, Node.js, and cloud technologies. Mentor junior developers and architect system solutions.',
-    technologies: ['React', 'Node.js', 'TypeScript', 'AWS', 'PostgreSQL']
-  },
-  {
     title: 'Full-Stack Developer',
-    company: 'Digital Innovations Ltd.',
-    period: '2020 - 2022',
-    description: 'Developed and maintained multiple client projects, focusing on modern web technologies and best practices.',
-    technologies: ['Vue.js', 'Python', 'Django', 'Docker', 'MySQL']
+    company: 'RunUp.',
+    period: 'Dec 2024 - May 2025',
+    description: '· Design PostgreSQL database & develop REST API server using ASP.NET Core Web API. \
+    \n· Implement some UI components in React and support connecting client requests to the server. \
+    \n· Deploy both server & client applications to the Internet with a paid domain (for the client). \
+    \n· Manage tasks in the application development team.',
+    technologies: ['C#', 'ASP.NET', 'TypeScript', 'React', 'PostgreSQL', 'Visual Studio', 'VS Code', 'Azure DevOps']
   },
   {
     title: 'Software Developer Intern',
-    company: 'StartUp Hub',
-    period: '2019 - 2020',
-    description: 'Gained hands-on experience in software development lifecycle, participated in agile development processes.',
-    technologies: ['JavaScript', 'HTML/CSS', 'Git', 'MongoDB']
+    company: 'proceedit',
+    period: 'May 2023 - Oct 2023',
+    description: '· Develop small Python, Flask & GraphQL applications for automation tasks on AWS virtual machines. \
+    \n· Convert some parts of large applications into microservices. \
+    \n· Maintain PostgreSQL tables and views as well as Google Sheets tabs.',
+    technologies: ['Python', 'Flask', 'GraphQL', 'PostgreSQL', 'AWS', 'Linux', 'VS Code', 'GitHub', 'Jira', 'Confluence']
   }
 ];
 
@@ -55,7 +52,7 @@ const ExperienceSection = () => {
                 <p className="text-primary font-medium">{exp.company}</p>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">{exp.description}</p>
+                <p className="mb-4 whitespace-pre-line">{exp.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, techIndex) => (
                     <span

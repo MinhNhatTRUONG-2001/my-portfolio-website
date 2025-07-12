@@ -1,29 +1,23 @@
 
-import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Languages } from 'lucide-react';
 
 const languages = [
   {
-    language: 'English',
+    language: 'Vietnamese',
     proficiency: 'Native',
     level: 100
   },
   {
-    language: 'Spanish',
-    proficiency: 'Professional',
-    level: 85
+    language: 'English',
+    proficiency: 'C1',
+    level: (5 / 6) * 100
   },
   {
-    language: 'French',
-    proficiency: 'Intermediate',
-    level: 60
+    language: 'Finnish',
+    proficiency: 'A1',
+    level: (1 / 6) * 100
   },
-  {
-    language: 'German',
-    proficiency: 'Basic',
-    level: 35
-  }
 ];
 
 const LanguagesSection = () => {
@@ -41,6 +35,12 @@ const LanguagesSection = () => {
           <CardHeader className="text-center">
             <Languages className="h-8 w-8 text-primary mx-auto mb-2" />
             <CardTitle>Language Proficiency</CardTitle>
+            <CardDescription>
+              Based on CEFR level.{' '}
+              <a href='https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions' target='_blank' style={{ textDecoration: 'underline'}}>
+                What is CEFR level?
+              </a>
+            </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             {languages.map((lang, index) => (

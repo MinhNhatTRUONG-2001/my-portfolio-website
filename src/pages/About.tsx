@@ -57,7 +57,7 @@ const About = () => {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <Avatar className="w-32 h-32 mx-auto mb-6 border-4 border-primary/20">
-              <AvatarImage src="/placeholder.svg" alt="John Developer" />
+              <AvatarImage src="/nhat-sqr.jpg" alt="Nhat Truong" />
               <AvatarFallback className="text-4xl font-bold bg-primary text-primary-foreground">
                 JD
               </AvatarFallback>

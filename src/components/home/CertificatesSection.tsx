@@ -6,33 +6,23 @@ import { Button } from '@/components/ui/button';
 
 const certificates = [
   {
-    title: 'AWS Certified Solutions Architect',
+    title: 'AWS Certified Cloud Practitioner',
     issuer: 'Amazon Web Services',
-    date: '2023',
-    credentialId: 'AWS-CSA-2023-001',
-    link: 'https://aws.amazon.com/certification/'
+    date: '5th Nov 2024',
+    link: 'https://www.credly.com/badges/314c9865-2f58-42bc-99a0-31997b596d72/public_url'
   },
   {
-    title: 'Google Cloud Professional Developer',
-    issuer: 'Google Cloud',
-    date: '2022',
-    credentialId: 'GCP-PD-2022-002',
-    link: 'https://cloud.google.com/certification'
+    title: 'AWS Cloud Quest: Cloud Practitioner',
+    issuer: 'Amazon Web Services',
+    date: '17th Oct 2024',
+    link: 'https://www.credly.com/badges/5229cf3e-8e3b-4dfb-962b-ada87b9e4635/public_url'
   },
   {
-    title: 'Microsoft Azure Fundamentals',
-    issuer: 'Microsoft',
-    date: '2022',
-    credentialId: 'AZ-900-2022-003',
-    link: 'https://docs.microsoft.com/en-us/learn/certifications/'
+    title: 'CyberOps Associate',
+    issuer: 'Cisco',
+    date: '28th Apr 2023',
+    link: 'https://www.credly.com/badges/ff49b77c-e5ce-49c3-93d0-8db3ca923617/public_url'
   },
-  {
-    title: 'Certified Scrum Master (CSM)',
-    issuer: 'Scrum Alliance',
-    date: '2021',
-    credentialId: 'CSM-2021-004',
-    link: 'https://www.scrumalliance.org/'
-  }
 ];
 
 const CertificatesSection = () => {
@@ -63,13 +53,10 @@ const CertificatesSection = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <p className="text-sm text-muted-foreground">
-                    Credential ID: {cert.credentialId}
-                  </p>
                   <Button variant="outline" size="sm" asChild>
                     <a href={cert.link} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-1 h-4 w-4" />
-                      Verify Certificate
+                      View Certificate
                     </a>
                   </Button>
                 </div>

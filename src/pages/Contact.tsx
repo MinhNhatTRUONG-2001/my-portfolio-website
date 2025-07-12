@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, Github, Linkedin, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -32,11 +32,11 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      Best way to reach me for professional inquiries
+                      Best way to reach me for professional inquiries.
                     </p>
                     <Button asChild>
-                      <a href="mailto:john.developer@email.com">
-                        john.developer@email.com
+                      <a href="mailto:minhnhat091101@gmail.com">
+                        minhnhat091101@gmail.com
                       </a>
                     </Button>
                   </CardContent>
@@ -51,11 +51,11 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      Available for calls during business hours
+                      Available for calls during business hours. You are also welcome to text or call me by WhatsApp.
                     </p>
-                    <Button variant="outline" asChild>
-                      <a href="tel:+1234567890">
-                        +1 (234) 567-8900
+                    <Button asChild>
+                      <a href="tel:+358403229459">
+                        +358 403229459
                       </a>
                     </Button>
                   </CardContent>
@@ -70,27 +70,10 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-2">
-                      San Francisco, CA, USA
+                      Tampere, Pirkanmaa, Finland
                     </p>
                     <p className="text-sm text-muted-foreground">
                       Open to remote work and relocation opportunities
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="animate-fade-in">
-                  <CardHeader>
-                    <CardTitle className="flex items-center">
-                      <Clock className="mr-2 h-5 w-5 text-primary" />
-                      Availability
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">
-                      Monday - Friday: 9:00 AM - 6:00 PM (PST)
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-2">
-                      Response time: Usually within 24 hours
                     </p>
                   </CardContent>
                 </Card>
@@ -113,30 +96,19 @@ const Contact = () => {
                       
                       <div className="space-y-3">
                         <Button variant="outline" className="w-full justify-start" asChild>
-                          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                          <a href="https://github.com/MinhNhatTRUONG-2001" target="_blank" rel="noopener noreferrer">
                             <Github className="mr-2 h-5 w-5" />
                             GitHub - Check out my code
                           </a>
                         </Button>
                         
                         <Button variant="outline" className="w-full justify-start" asChild>
-                          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                          <a href="https://www.linkedin.com/in/minh-nhat-truong-97459b223/" target="_blank" rel="noopener noreferrer">
                             <Linkedin className="mr-2 h-5 w-5" />
                             LinkedIn - Professional network
                           </a>
                         </Button>
                       </div>
-                    </div>
-
-                    <div className="pt-4 border-t">
-                      <h3 className="font-semibold mb-3">What I'm looking for:</h3>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Full-time software engineering positions</li>
-                        <li>• Freelance web development projects</li>
-                        <li>• Open source collaboration opportunities</li>
-                        <li>• Technical mentorship and knowledge sharing</li>
-                        <li>• Speaking opportunities at tech events</li>
-                      </ul>
                     </div>
                   </CardContent>
                 </Card>
@@ -150,27 +122,6 @@ const Contact = () => {
                       For urgent matters or quick questions, email is the fastest way to reach me. 
                       I check my email regularly and aim to respond within a few hours during business days.
                     </p>
-                    <div className="bg-primary/10 p-4 rounded-lg">
-                      <p className="text-sm font-medium text-primary">
-                        💡 Pro tip: Include your project details, timeline, and budget range 
-                        in your first message to get a more detailed response!
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="animate-fade-in border-primary/20">
-                  <CardContent className="p-6 text-center">
-                    <h3 className="font-bold text-lg mb-2">Ready to start a conversation?</h3>
-                    <p className="text-muted-foreground mb-4">
-                      Let's discuss your project and see how I can help bring your ideas to life.
-                    </p>
-                    <Button size="lg" asChild>
-                      <a href="mailto:john.developer@email.com?subject=Project Inquiry">
-                        <Mail className="mr-2 h-5 w-5" />
-                        Send Message
-                      </a>
-                    </Button>
                   </CardContent>
                 </Card>
               </div>

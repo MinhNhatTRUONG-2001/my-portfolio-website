@@ -1,8 +1,8 @@
 
-import React from 'react';
-import { Download, Mail } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -12,34 +12,31 @@ const HeroSection = () => {
           {/* Content */}
           <div className="flex-1 text-center lg:text-left animate-fade-in">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Hi, I'm{' '}
-              <span className="gradient-text">John Developer</span>
+              Hi! I'm{' '}
+              <span className="gradient-text">Nhat Truong</span>
             </h1>
             <h2 className="text-xl sm:text-2xl text-muted-foreground mb-6">
               Software Engineer & Full-Stack Developer
             </h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto lg:mx-0">
-              Passionate software engineer with a Bachelor's in Information Technology, 
-              specializing in full-stack development. I build scalable web applications 
-              and love solving complex technical challenges.
+              Passionate software engineer, specializing in full-stack development. I build scalable web, desktop and mobile
+              applications and love solving complex technical challenges.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="group">
-                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                Download CV
-              </Button>
-              <Button variant="outline" size="lg">
-                <Mail className="mr-2 h-5 w-5" />
-                Contact Me
-              </Button>
+              <a href="https://drive.google.com/file/d/1zddOkSJc2DwqPfjOZaYpIsr1HhTy7Kug/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="group">
+                  <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                  Download CV/Resume
+                </Button>
+              </a>
             </div>
           </div>
 
           {/* Avatar */}
           <div className="animate-slide-up">
             <Avatar className="w-64 h-64 lg:w-80 lg:h-80 border-4 border-primary/20 shadow-2xl">
-              <AvatarImage src="/placeholder.svg" alt="John Developer" />
+              <AvatarImage src="/nhat-sqr.jpg" alt="Nhat Truong" />
               <AvatarFallback className="text-6xl font-bold bg-primary text-primary-foreground">
                 JD
               </AvatarFallback>

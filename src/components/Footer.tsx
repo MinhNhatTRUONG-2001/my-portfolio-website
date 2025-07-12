@@ -1,7 +1,6 @@
 
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -11,15 +10,14 @@ const Footer = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
-              <Code className="h-5 w-5 text-primary-foreground" />
+              <img src="/my-logo.svg" alt="Logo" className="h-6 w-6" />
             </div>
-            <span className="font-bold text-lg gradient-text">Portfolio</span>
           </Link>
 
           {/* Social Links */}
           <div className="flex items-center space-x-4">
             <a
-              href="https://github.com"
+              href="https://github.com/MinhNhatTRUONG-2001"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
@@ -27,7 +25,7 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/minh-nhat-truong-97459b223/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
@@ -39,7 +37,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-6 pt-6 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Software Developer Portfolio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Portfolio of Nhat Truong. All rights reserved.</p>
         </div>
       </div>
     </footer>
