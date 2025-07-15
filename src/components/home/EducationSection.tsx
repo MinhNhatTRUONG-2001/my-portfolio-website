@@ -4,12 +4,19 @@ import { Button } from '../ui/button';
 
 const educationData = [
   {
+    degree: 'Master of Science in Data Science',
+    university: 'Tampere University',
+    duration: '2025 - present',
+    major: 'Machine Learning',
+  },
+  {
     degree: 'Bachelor of Engineering in Information Technology',
     university: 'Vaasa University of Applied Sciences (VAMK)',
     duration: '2020 - 2024',
     major: 'Software Development',
     minor: 'Network & Telecommunication',
-    gpa: '4.39/5.0'
+    gpa: '4.39/5.0',
+    certificateFileUrl: 'https://drive.google.com/file/d/1G1b5YjGhNI-D0H9Ax9mvbVMMQJyyL5lQ/view'
   },
 ];
 
@@ -51,23 +58,29 @@ const EducationSection = () => {
                       <p className="font-medium">Major: {edu.major}</p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-2">
-                    <Award className="h-5 w-5 text-primary mt-0.5" />
-                    <div>
-                      <p className="font-medium">Minor: {edu.minor}</p>
+                  {edu.minor &&
+                    <div className="flex items-start space-x-2">
+                      <Award className="h-5 w-5 text-primary mt-0.5" />
+                      <div>
+                        <p className="font-medium">Minor: {edu.minor}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <div>
-                      <p className="font-medium">GPA: {edu.gpa}</p>
+                  }
+                  {edu.gpa &&
+                    <div className="flex items-start space-x-2">
+                      <div>
+                        <p className="font-medium">GPA: {edu.gpa}</p>
+                      </div>
                     </div>
-                  </div>
-                  <Button size="sm" asChild>
-                    <a href='https://drive.google.com/file/d/1G1b5YjGhNI-D0H9Ax9mvbVMMQJyyL5lQ/view' target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-1 h-4 w-4" />
-                      View Certificate & Transcript of Records
-                    </a>
-                  </Button>
+                  }
+                  {edu.certificateFileUrl &&
+                    <Button size="sm" asChild>
+                      <a href={edu.certificateFileUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-1 h-4 w-4" />
+                        View Certificate & Transcript of Records
+                      </a>
+                    </Button>
+                  }
                 </div>
               </CardContent>
             </Card>

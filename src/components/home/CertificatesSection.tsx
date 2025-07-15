@@ -53,7 +53,7 @@ const CertificatesSection = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <Button variant="outline" size="sm" asChild>
+                  <Button size="sm" asChild>
                     <a href={cert.link} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-1 h-4 w-4" />
                       View Certificate

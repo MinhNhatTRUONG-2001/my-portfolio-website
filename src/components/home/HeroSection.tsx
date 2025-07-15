@@ -38,7 +38,7 @@ const HeroSection = () => {
             <Avatar className="w-64 h-64 lg:w-80 lg:h-80 border-4 border-primary/20 shadow-2xl">
               <AvatarImage src="/nhat-sqr.jpg" alt="Nhat Truong" />
               <AvatarFallback className="text-6xl font-bold bg-primary text-primary-foreground">
-                JD
+                NT
               </AvatarFallback>
             </Avatar>
           </div>
