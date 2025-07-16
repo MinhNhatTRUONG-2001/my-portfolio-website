@@ -1,6 +1,5 @@
 
 import { Link } from 'react-router-dom';
-import { Github, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -22,7 +21,11 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
             >
-              <Github className="h-5 w-5" />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                alt="GitHub"
+                className="h-5 w-5"
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/minh-nhat-truong-97459b223/"
@@ -30,7 +33,11 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
             >
-              <Linkedin className="h-5 w-5" />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
+                alt="LinkedIn"
+                className="h-5 w-5"
+              />
             </a>
           </div>
         </div>

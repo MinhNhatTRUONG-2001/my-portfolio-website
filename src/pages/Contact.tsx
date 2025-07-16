@@ -1,9 +1,7 @@
-
-import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, Github, Linkedin, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -97,14 +95,22 @@ const Contact = () => {
                       <div className="space-y-3">
                         <Button variant="outline" className="w-full justify-start" asChild>
                           <a href="https://github.com/MinhNhatTRUONG-2001" target="_blank" rel="noopener noreferrer">
-                            <Github className="mr-2 h-5 w-5" />
+                            <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                              alt="GitHub"
+                              className="mr-2 h-5 w-5"
+                            />
                             GitHub - Check out my code
                           </a>
                         </Button>
                         
                         <Button variant="outline" className="w-full justify-start" asChild>
                           <a href="https://www.linkedin.com/in/minh-nhat-truong-97459b223/" target="_blank" rel="noopener noreferrer">
-                            <Linkedin className="mr-2 h-5 w-5" />
+                            <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
+                              alt="LinkedIn"
+                              className="mr-2 h-5 w-5"
+                            />
                             LinkedIn - Professional network
                           </a>
                         </Button>

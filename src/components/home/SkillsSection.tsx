@@ -1,40 +1,41 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, Users, Database, Cloud } from 'lucide-react';
+import { Code, Users, Database, Cloud, Computer, Monitor, Server, Wrench } from 'lucide-react';
 
 const technicalSkills = [
   {
     category: 'Frontend',
-    icon: Code,
-    skills: ['React', 'Vue.js', 'TypeScript', 'JavaScript', 'HTML5/CSS3', 'Tailwind CSS']
+    icon: Monitor,
+    skills: ['React', 'Angular', 'TypeScript', 'React Native', 'JavaScript', 'HTML5 & CSS3', 'Blazor WebAssembly', 'Android (Java)']
   },
   {
     category: 'Backend',
-    icon: Database,
-    skills: ['Node.js', 'Python', 'Django', 'Express.js', 'REST APIs', 'GraphQL']
+    icon: Server,
+    skills: ['Node.js (Express.js and NestJS)', 'Python (Flask)', 'ASP.NET Core (MVC, Web API)', 'EF Core', 'REST API', 'GraphQL', 'Java (Spring Boot)']
   },
   {
-    category: 'Database',
+    category: 'Databases',
     icon: Database,
-    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Firebase']
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'MariaDB', 'SQLite']
   },
   {
     category: 'DevOps & Cloud',
     icon: Cloud,
-    skills: ['AWS', 'Docker', 'Git', 'CI/CD', 'Linux', 'Nginx']
+    skills: ['AWS', 'Azure', 'CI/CD (Azure, Netlify, Vercel)', 'Docker']
+  },
+  {
+    category: 'Tools',
+    icon: Wrench,
+    skills: ['Jira', 'Confluence', 'Notion', 'Visual Studio', 'VS Code', 'IntelliJ', 'Linux & CLI', 'Git' , 'GitHub']
   }
 ];
 
 const softSkills = [
   'Problem Solving',
-  'Team Leadership',
-  'Project Management',
-  'Communication',
   'Critical Thinking',
+  'Project Management',
   'Agile/Scrum',
-  'Code Review',
-  'Mentoring'
 ];
 
 const SkillsSection = () => {
@@ -51,7 +52,7 @@ const SkillsSection = () => {
         {/* Technical Skills */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-6 text-center">Technical Skills</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {technicalSkills.map((skillGroup, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow animate-fade-in">
                 <CardHeader className="text-center">
