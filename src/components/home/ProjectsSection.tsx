@@ -27,7 +27,7 @@ const featuredProjects = [
     ],
     website: null,
     video: 'https://www.youtube.com/watch?v=PRxfJTVWaaw',
-    image: 'https://previews.dropbox.com/p/thumb/ACtK4K9SzjFKUN96gu-UcjiVQ-wuJmz-8TwwDKjlW7Na2JGiWnLVX1NLkZee1twBj_YRTgFATO-E7pVz2k22bCMurxMhgNs64XwtJQ5vpJuGyBTgDU0dbw38kw4kdTyVYnSAZaESAbatAXv_6ivMLfH9dZmVSltsW_Lf3HLMwlsE4lqLJ8JHWRuxofAW0m83q25kGnjF3gPw965O09Kt6qZ64yaR3_SVAHCshXRHGKybBrAU5eHEO9GhAdGJEfkNW5U8Isa9y6nJw-hV7OSIO0tNiqoLY_nzfdc9Xj-_oAwzpeulwU7qZ_gC4EITkWPRR5g/p.png'
+    image: 'https://drive.google.com/thumbnail?id=1sJhQJu26w1cxDC7YCcRrf9sljbB_mj0y&sz=w1000'
   },
   {
     title: 'Ekseli Spreadsheet',
@@ -38,7 +38,7 @@ const featuredProjects = [
     ],
     website: null,
     video: 'https://www.youtube.com/watch?v=7fK3-RTNm1g',
-    image: 'https://previews.dropbox.com/p/thumb/ACv6eiF0ihFZLANCkW02n8L2s7RgoK8EpLXxwWyCqhuApsezEQPZZbIUbRsQ0RX11dllZRZUdZPYUjF1Pf3x3b2ClZJVLvjRUhx-vO3st2k2rroTUh9rQncoINpz-ryY9VA2nF0jaHpu4qfAz0LD1ucR5D7J6EvCRFT-Kevk55dPED3VqONBTKi6KLDmFPFgM7U7gqYKDvtOWpE4uYVt6xM4s-0KFoyoHWCr0zUK9KofkvhC-1FWrg7iKDaiJP3EhBZJG2an4hS8KB6fQ2oh1BohIKTw2HOJ6UjZ-4rLOAWta9iX4VLH2rykuCHkQczGASwhy61eVflNMRjxnX6ECcxr/p.png'
+    image: 'https://drive.google.com/thumbnail?id=1B2S2eADz875OulgB6t7gokikfOGJvQEc&sz=w1000'
   },
   {
     title: 'The Quotes',
@@ -50,7 +50,7 @@ const featuredProjects = [
     website: 'https://mango-sea-01ee22003.6.azurestaticapps.net/',
     video: 'https://www.youtube.com/watch?v=VRGxnK3Gh9I',
     image: 'https://previews.dropbox.com/p/thumb/ACvgc6SJiE0Cx4_RwaYLfAojkQtJ52-oUmA5nJUl6Timo9LbAXomejCxC03NrJFHinDQI4YJvgjsE4K3kWemVJd4ltVayNVhDe0gLipl09xQ5Z3jmJwJ7MabAZ4Bt0Bd62Ew1h_48v9mJ3b352ZpO9cls8Q17HlLLlDuqmTkbC56pu4QY2t8GTx72ZoESEkKq6BtBxRTNRukFyKd0itmsk1LMhktmKSyfmxaaUPxWIrJzZ75ztI0b6HqwQSsT7jLbxcH8J0urll12NPwFkAcScLzC6PoS4OluYwM7IPTbXGgj889-8qFvf1K0ucmjY94JudvUwRgT8_xHA9mIVaM_Hjj/p.png'
-  }
+  },
 ];
 
 const ProjectsSection = () => {

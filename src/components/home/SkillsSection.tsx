@@ -1,28 +1,27 @@
 
-import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, Users, Database, Cloud, Computer, Monitor, Server, Wrench } from 'lucide-react';
+import { Users, Database, Cloud, Monitor, Server, Wrench } from 'lucide-react';
 
 const technicalSkills = [
   {
     category: 'Frontend',
     icon: Monitor,
-    skills: ['React', 'Angular', 'TypeScript', 'React Native', 'JavaScript', 'HTML5 & CSS3', 'Blazor WebAssembly', 'Android (Java)']
+    skills: ['React', 'Angular', 'TypeScript', 'React Native', 'JavaScript', 'HTML5 & CSS3', 'Blazor WebAssembly', 'WPF', 'Android (Java)']
   },
   {
     category: 'Backend',
     icon: Server,
-    skills: ['Node.js (Express.js and NestJS)', 'Python (Flask)', 'ASP.NET Core (MVC, Web API)', 'EF Core', 'REST API', 'GraphQL', 'Java (Spring Boot)']
+    skills: ['Node.js (Express.js, NestJS)', 'Python (Flask)', 'C#', 'ASP.NET Core (MVC, Web API)', 'EF Core', 'REST API', 'GraphQL', 'Java (Spring Boot)']
   },
   {
     category: 'Databases',
     icon: Database,
-    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'MariaDB', 'SQLite']
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'MariaDB', 'SQLite', 'Firebase']
   },
   {
     category: 'DevOps & Cloud',
     icon: Cloud,
-    skills: ['AWS', 'Azure', 'CI/CD (Azure, Netlify, Vercel)', 'Docker']
+    skills: ['AWS', 'Azure', 'CI/CD (Azure DevOps, Netlify, Vercel)', 'Docker']
   },
   {
     category: 'Tools',
@@ -31,7 +30,7 @@ const technicalSkills = [
   }
 ];
 
-const softSkills = [
+const nonTechnicalSkills = [
   'Problem Solving',
   'Critical Thinking',
   'Project Management',
@@ -76,17 +75,16 @@ const SkillsSection = () => {
           </div>
         </div>
 
-        {/* Soft Skills */}
+        {/* Non-technical Skills */}
         <div>
-          <h3 className="text-2xl font-semibold mb-6 text-center">Soft Skills</h3>
+          <h3 className="text-2xl font-semibold mb-6 text-center">Non-technical Skills</h3>
           <Card className="max-w-4xl mx-auto animate-fade-in">
             <CardHeader className="text-center">
               <Users className="h-8 w-8 text-primary mx-auto mb-2" />
-              <CardTitle>Professional Skills</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                {softSkills.map((skill, index) => (
+                {nonTechnicalSkills.map((skill, index) => (
                   <div
                     key={index}
                     className="px-3 py-2 text-sm bg-accent/10 text-accent rounded-lg text-center font-medium"

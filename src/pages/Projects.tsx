@@ -28,7 +28,7 @@ const allProjects = [
     ],
     website: null,
     video: 'https://www.youtube.com/watch?v=PRxfJTVWaaw',
-    image: 'https://previews.dropbox.com/p/thumb/ACtK4K9SzjFKUN96gu-UcjiVQ-wuJmz-8TwwDKjlW7Na2JGiWnLVX1NLkZee1twBj_YRTgFATO-E7pVz2k22bCMurxMhgNs64XwtJQ5vpJuGyBTgDU0dbw38kw4kdTyVYnSAZaESAbatAXv_6ivMLfH9dZmVSltsW_Lf3HLMwlsE4lqLJ8JHWRuxofAW0m83q25kGnjF3gPw965O09Kt6qZ64yaR3_SVAHCshXRHGKybBrAU5eHEO9GhAdGJEfkNW5U8Isa9y6nJw-hV7OSIO0tNiqoLY_nzfdc9Xj-_oAwzpeulwU7qZ_gC4EITkWPRR5g/p.png'
+    image: 'https://drive.google.com/thumbnail?id=1sJhQJu26w1cxDC7YCcRrf9sljbB_mj0y&sz=w1000'
   },
   {
     title: 'Ekseli Spreadsheet',
@@ -39,7 +39,7 @@ const allProjects = [
     ],
     website: null,
     video: 'https://www.youtube.com/watch?v=7fK3-RTNm1g',
-    image: 'https://previews.dropbox.com/p/thumb/ACv6eiF0ihFZLANCkW02n8L2s7RgoK8EpLXxwWyCqhuApsezEQPZZbIUbRsQ0RX11dllZRZUdZPYUjF1Pf3x3b2ClZJVLvjRUhx-vO3st2k2rroTUh9rQncoINpz-ryY9VA2nF0jaHpu4qfAz0LD1ucR5D7J6EvCRFT-Kevk55dPED3VqONBTKi6KLDmFPFgM7U7gqYKDvtOWpE4uYVt6xM4s-0KFoyoHWCr0zUK9KofkvhC-1FWrg7iKDaiJP3EhBZJG2an4hS8KB6fQ2oh1BohIKTw2HOJ6UjZ-4rLOAWta9iX4VLH2rykuCHkQczGASwhy61eVflNMRjxnX6ECcxr/p.png'
+    image: 'https://drive.google.com/thumbnail?id=1B2S2eADz875OulgB6t7gokikfOGJvQEc&sz=w1000'
   },
   {
     title: 'The Quotes',
@@ -51,7 +51,85 @@ const allProjects = [
     website: 'https://mango-sea-01ee22003.6.azurestaticapps.net/',
     video: 'https://www.youtube.com/watch?v=VRGxnK3Gh9I',
     image: 'https://previews.dropbox.com/p/thumb/ACvgc6SJiE0Cx4_RwaYLfAojkQtJ52-oUmA5nJUl6Timo9LbAXomejCxC03NrJFHinDQI4YJvgjsE4K3kWemVJd4ltVayNVhDe0gLipl09xQ5Z3jmJwJ7MabAZ4Bt0Bd62Ew1h_48v9mJ3b352ZpO9cls8Q17HlLLlDuqmTkbC56pu4QY2t8GTx72ZoESEkKq6BtBxRTNRukFyKd0itmsk1LMhktmKSyfmxaaUPxWIrJzZ75ztI0b6HqwQSsT7jLbxcH8J0urll12NPwFkAcScLzC6PoS4OluYwM7IPTbXGgj889-8qFvf1K0ucmjY94JudvUwRgT8_xHA9mIVaM_Hjj/p.png'
-  }
+  },
+  {
+      title: 'Group Divisor',
+      description: 'This application can divide a large number of people into groups of 3-5 members (preferably 4 memebers).',
+      technologies: ['C#', 'WPF'],
+      code: [
+        {url: 'https://github.com/MinhNhatTRUONG-2001/GroupDivisor', label: null},
+      ],
+      website: null,
+      video: null,
+      image: 'https://drive.google.com/thumbnail?id=1kvwGaUUKLI2tw0m4BqUBS8RQ10lFR-D3&sz=w1000'
+    },
+    {
+      title: 'GraphQL Library Management',
+      description: 'A library management system for managing books and authors using GraphQL.',
+      technologies: ['JavaScript', 'React', 'GraphQL', 'Node.js', 'MongoDB', 'JWT'],
+      code: [
+        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-server', label: 'Server'},
+        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-client', label: 'Client'},
+      ],
+      website: null,
+      video: null,
+      image: null
+    },
+    {
+      title: 'Bookstore',
+      description: 'A small bookstore project for handling book data using Firebase database and React.',
+      technologies: ['JavaScript', 'React', 'Firebase'],
+      code: [
+        {url: 'https://github.com/MinhNhatTRUONG-2001/reactjs-firebase-bookstore', label: null},
+      ],
+      website: 'https://minhnhattruong-2001.github.io/reactjs-firebase-bookstore/',
+      video: null,
+      image: null
+    },
+    {
+      title: 'Meeting Calendar',
+      description: 'An Android application for managing meetings, allowing users to create, view, and manage their meeting schedules.',
+      technologies: ['Android', 'Java'],
+      code: [
+        {url: 'https://github.com/MinhNhatTRUONG-2001/AndroidMeetingCalendar', label: null},
+      ],
+      website: null,
+      video: null,
+      image: null
+    },
+    {
+      title: 'Calculator',
+      description: 'A simple Android calculator application that performs basic arithmetic operations.',
+      technologies: ['Android', 'Java'],
+      code: [
+        {url: 'https://github.com/MinhNhatTRUONG-2001/AndroidCalculator', label: null},
+      ],
+      website: null,
+      video: null,
+      image: null
+    },
+    {
+      title: 'Northwind',
+      description: 'The final project of Databases and Open Interfaces course: a Spring Boot RESTful service which interacts with "e2000606_northwind" database in VAMK\'s MariaDB server.',
+      technologies: ['Java', 'Spring Boot', 'MariaDB', 'REST API'],
+      code: [
+        {url: 'https://github.com/MinhNhatTRUONG-2001/northwind', label: null},
+      ],
+      website: null,
+      video: null,
+      image: null
+    },
+    {
+      title: 'oPhone',
+      description: 'Just a design of a mobile phone online store using pure HTML and CSS.',
+      technologies: ['HTML', 'CSS'],
+      code: [
+        {url: 'https://github.com/MinhNhatTRUONG-2001/CSS_oPhone', label: null},
+      ],
+      website: 'https://minhnhattruong-2001.github.io/CSS_oPhone/',
+      video: null,
+      image: null
+    },
 ];
 
 const Projects = () => {
@@ -75,11 +153,13 @@ const Projects = () => {
               <Card key={index} className="hover:shadow-xl transition-all duration-300 animate-fade-in group">
                 {/* Project Image/Placeholder */}
                 <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-t-lg">
+                {project.image &&
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover rounded-t-lg"
                   />
+                }
                 </div>
 
                 <CardHeader>
