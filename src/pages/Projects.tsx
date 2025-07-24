@@ -32,7 +32,7 @@ const allProjects = [
   },
   {
     title: 'Ekseli Spreadsheet',
-    description: 'The project description can be read in this link: https://dev.azure.com/e2000606/SEP2023%20-%20Ekseli%201%20Spreadsheet',
+    description: 'The project description can be read by clicking the "Code" button below, then going to Overview > Summary in the Azure DevOps project.',
     technologies: ['React', 'TypeScript', 'DevExtreme', 'SPARQL'],
     code: [
       {url: 'https://dev.azure.com/e2000606/_git/SEP2023%20-%20Ekseli%201%20Spreadsheet', label: null},
@@ -50,7 +50,7 @@ const allProjects = [
     ],
     website: 'https://mango-sea-01ee22003.6.azurestaticapps.net/',
     video: 'https://www.youtube.com/watch?v=VRGxnK3Gh9I',
-    image: 'https://previews.dropbox.com/p/thumb/ACvgc6SJiE0Cx4_RwaYLfAojkQtJ52-oUmA5nJUl6Timo9LbAXomejCxC03NrJFHinDQI4YJvgjsE4K3kWemVJd4ltVayNVhDe0gLipl09xQ5Z3jmJwJ7MabAZ4Bt0Bd62Ew1h_48v9mJ3b352ZpO9cls8Q17HlLLlDuqmTkbC56pu4QY2t8GTx72ZoESEkKq6BtBxRTNRukFyKd0itmsk1LMhktmKSyfmxaaUPxWIrJzZ75ztI0b6HqwQSsT7jLbxcH8J0urll12NPwFkAcScLzC6PoS4OluYwM7IPTbXGgj889-8qFvf1K0ucmjY94JudvUwRgT8_xHA9mIVaM_Hjj/p.png'
+    image: 'https://drive.google.com/thumbnail?id=17WZnQUk6b6ItRkHXAFvBuWMyvS-VbZeq&sz=w1000'
   },
   {
       title: 'Group Divisor',
@@ -64,18 +64,6 @@ const allProjects = [
       image: 'https://drive.google.com/thumbnail?id=1kvwGaUUKLI2tw0m4BqUBS8RQ10lFR-D3&sz=w1000'
     },
     {
-      title: 'GraphQL Library Management',
-      description: 'A library management system for managing books and authors using GraphQL.',
-      technologies: ['JavaScript', 'React', 'GraphQL', 'Node.js', 'MongoDB', 'JWT'],
-      code: [
-        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-server', label: 'Server'},
-        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-client', label: 'Client'},
-      ],
-      website: null,
-      video: null,
-      image: null
-    },
-    {
       title: 'Bookstore',
       description: 'A small bookstore project for handling book data using Firebase database and React.',
       technologies: ['JavaScript', 'React', 'Firebase'],
@@ -84,18 +72,30 @@ const allProjects = [
       ],
       website: 'https://minhnhattruong-2001.github.io/reactjs-firebase-bookstore/',
       video: null,
-      image: null
+      image: 'https://drive.google.com/thumbnail?id=18pr3-RZ8lzeAo-BZmCbK1F-91ICg-pi4&sz=w1000'
+    },
+    {
+      title: 'GraphQL Library Management',
+      description: 'A library management system for managing books and authors using GraphQL. The project is in the 2023 GraphQL course on fullstackopen.com, conducted by the University of Helsinki.',
+      technologies: ['JavaScript', 'React', 'GraphQL', 'Apollo', 'Node.js', 'MongoDB', 'JWT'],
+      code: [
+        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-server', label: 'Server'},
+        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-client', label: 'Client'},
+      ],
+      website: null,
+      video: null,
+      image: 'https://drive.google.com/thumbnail?id=1s2M6WlApQECCcrkJe1eSuh5JTtrEHZig&sz=w1000'
     },
     {
       title: 'Meeting Calendar',
       description: 'An Android application for managing meetings, allowing users to create, view, and manage their meeting schedules.',
-      technologies: ['Android', 'Java'],
+      technologies: ['Android', 'Java', 'SQLite'],
       code: [
         {url: 'https://github.com/MinhNhatTRUONG-2001/AndroidMeetingCalendar', label: null},
       ],
       website: null,
-      video: null,
-      image: null
+      video: 'https://www.youtube.com/watch?v=vB3VFOC-WdI',
+      image: 'https://drive.google.com/thumbnail?id=14-aulojPc35QPXlt0fTUVkR4G7ORrGRx&sz=w1000'
     },
     {
       title: 'Calculator',
@@ -105,15 +105,16 @@ const allProjects = [
         {url: 'https://github.com/MinhNhatTRUONG-2001/AndroidCalculator', label: null},
       ],
       website: null,
-      video: null,
-      image: null
+      video: 'https://www.youtube.com/shorts/1pct9mn9yis',
+      image: 'https://github.com/user-attachments/assets/5302488a-b7b0-4e75-bba4-c3545b3dbfe6'
     },
     {
-      title: 'Northwind',
-      description: 'The final project of Databases and Open Interfaces course: a Spring Boot RESTful service which interacts with "e2000606_northwind" database in VAMK\'s MariaDB server.',
-      technologies: ['Java', 'Spring Boot', 'MariaDB', 'REST API'],
+      title: 'SCM Simulator',
+      description: 'A web tool for maintaining supply chain simulation data such as trucks, orders and locations. The project is simple because it is mainly used for studying software engineering practices, DevOps and CI/CD.',
+      technologies: ['Java', 'Spring Boot', 'MariaDB', 'REST API', 'React', 'TypeScript', 'Material UI'],
       code: [
-        {url: 'https://github.com/MinhNhatTRUONG-2001/northwind', label: null},
+        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-server', label: 'Server'},
+        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-client', label: 'Client'},
       ],
       website: null,
       video: null,
@@ -128,7 +129,7 @@ const allProjects = [
       ],
       website: 'https://minhnhattruong-2001.github.io/CSS_oPhone/',
       video: null,
-      image: null
+      image: 'https://drive.google.com/thumbnail?id=1ph9-0RSO_mhFKyGKJEnRYV9HD6ylWA4K&sz=w1000'
     },
 ];
 
