@@ -15,7 +15,7 @@ const allProjects = [
     ],
     website: 'https://hangman-client.vercel.app/',
     video: 'https://www.youtube.com/watch?v=m_QfnsvYJRw',
-    image: 'https://github.com/user-attachments/assets/6f5e0d7c-5144-4e39-a1ff-5bb79664bff1'
+    thumbnail: 'https://github.com/user-attachments/assets/6f5e0d7c-5144-4e39-a1ff-5bb79664bff1'
   },
   {
     title: 'Tournament Management',
@@ -28,7 +28,7 @@ const allProjects = [
     ],
     website: null,
     video: 'https://www.youtube.com/watch?v=PRxfJTVWaaw',
-    image: 'https://drive.google.com/thumbnail?id=1sJhQJu26w1cxDC7YCcRrf9sljbB_mj0y&sz=w1000'
+    thumbnail: 'https://drive.google.com/thumbnail?id=1sJhQJu26w1cxDC7YCcRrf9sljbB_mj0y&sz=w1000'
   },
   {
     title: 'Ekseli Spreadsheet',
@@ -39,7 +39,7 @@ const allProjects = [
     ],
     website: null,
     video: 'https://www.youtube.com/watch?v=7fK3-RTNm1g',
-    image: 'https://drive.google.com/thumbnail?id=1B2S2eADz875OulgB6t7gokikfOGJvQEc&sz=w1000'
+    thumbnail: 'https://drive.google.com/thumbnail?id=1B2S2eADz875OulgB6t7gokikfOGJvQEc&sz=w1000'
   },
   {
     title: 'The Quotes',
@@ -50,7 +50,7 @@ const allProjects = [
     ],
     website: 'https://mango-sea-01ee22003.6.azurestaticapps.net/',
     video: 'https://www.youtube.com/watch?v=VRGxnK3Gh9I',
-    image: 'https://drive.google.com/thumbnail?id=17WZnQUk6b6ItRkHXAFvBuWMyvS-VbZeq&sz=w1000'
+    thumbnail: 'https://drive.google.com/thumbnail?id=17WZnQUk6b6ItRkHXAFvBuWMyvS-VbZeq&sz=w1000'
   },
   {
       title: 'Group Divisor',
@@ -61,7 +61,7 @@ const allProjects = [
       ],
       website: null,
       video: null,
-      image: 'https://drive.google.com/thumbnail?id=1kvwGaUUKLI2tw0m4BqUBS8RQ10lFR-D3&sz=w1000'
+      thumbnail: 'https://drive.google.com/thumbnail?id=1kvwGaUUKLI2tw0m4BqUBS8RQ10lFR-D3&sz=w1000'
     },
     {
       title: 'Bookstore',
@@ -72,7 +72,7 @@ const allProjects = [
       ],
       website: 'https://minhnhattruong-2001.github.io/reactjs-firebase-bookstore/',
       video: null,
-      image: 'https://drive.google.com/thumbnail?id=18pr3-RZ8lzeAo-BZmCbK1F-91ICg-pi4&sz=w1000'
+      thumbnail: 'https://drive.google.com/thumbnail?id=18pr3-RZ8lzeAo-BZmCbK1F-91ICg-pi4&sz=w1000'
     },
     {
       title: 'GraphQL Library Management',
@@ -84,7 +84,7 @@ const allProjects = [
       ],
       website: null,
       video: null,
-      image: 'https://drive.google.com/thumbnail?id=1s2M6WlApQECCcrkJe1eSuh5JTtrEHZig&sz=w1000'
+      thumbnail: 'https://drive.google.com/thumbnail?id=1s2M6WlApQECCcrkJe1eSuh5JTtrEHZig&sz=w1000'
     },
     {
       title: 'Meeting Calendar',
@@ -95,7 +95,7 @@ const allProjects = [
       ],
       website: null,
       video: 'https://www.youtube.com/watch?v=vB3VFOC-WdI',
-      image: 'https://drive.google.com/thumbnail?id=14-aulojPc35QPXlt0fTUVkR4G7ORrGRx&sz=w1000'
+      thumbnail: 'https://drive.google.com/thumbnail?id=14-aulojPc35QPXlt0fTUVkR4G7ORrGRx&sz=w1000'
     },
     {
       title: 'Calculator',
@@ -106,19 +106,18 @@ const allProjects = [
       ],
       website: null,
       video: 'https://www.youtube.com/shorts/1pct9mn9yis',
-      image: 'https://github.com/user-attachments/assets/5302488a-b7b0-4e75-bba4-c3545b3dbfe6'
+      thumbnail: 'https://github.com/user-attachments/assets/5302488a-b7b0-4e75-bba4-c3545b3dbfe6'
     },
     {
       title: 'SCM Simulator',
       description: 'A web tool for maintaining supply chain simulation data such as trucks, orders and locations. The project is simple because it is mainly used for studying software engineering practices, DevOps and CI/CD.',
       technologies: ['Java', 'Spring Boot', 'MariaDB', 'REST API', 'React', 'TypeScript', 'Material UI'],
       code: [
-        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-server', label: 'Server'},
-        {url: 'https://github.com/MinhNhatTRUONG-2001/graphql-library-client', label: 'Client'},
+        {url: 'https://github.com/MinhNhatTRUONG-2001/scm-react-typescript-and-spring-boot', label: null},
       ],
       website: null,
-      video: null,
-      image: null
+      video: 'https://www.youtube.com/watch?v=arH7hFOS0fw',
+      thumbnail: 'https://drive.google.com/thumbnail?id=1ISG4P3_8bJx3kYhomLaLMFZyhYJe8RyR&sz=w1000'
     },
     {
       title: 'oPhone',
@@ -129,7 +128,7 @@ const allProjects = [
       ],
       website: 'https://minhnhattruong-2001.github.io/CSS_oPhone/',
       video: null,
-      image: 'https://drive.google.com/thumbnail?id=1ph9-0RSO_mhFKyGKJEnRYV9HD6ylWA4K&sz=w1000'
+      thumbnail: 'https://drive.google.com/thumbnail?id=1ph9-0RSO_mhFKyGKJEnRYV9HD6ylWA4K&sz=w1000'
     },
 ];
 
@@ -152,11 +151,11 @@ const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allProjects.map((project, index) => (
               <Card key={index} className="hover:shadow-xl transition-all duration-300 animate-fade-in group">
-                {/* Project Image/Placeholder */}
+                {/* Project Thumbnail Image/Placeholder */}
                 <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-t-lg">
-                {project.image &&
+                {project.thumbnail &&
                   <img
-                    src={project.image}
+                    src={project.thumbnail}
                     alt={project.title}
                     className="w-full h-full object-cover rounded-t-lg"
                   />

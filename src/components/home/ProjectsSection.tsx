@@ -14,7 +14,7 @@ const featuredProjects = [
     ],
     website: 'https://hangman-client.vercel.app/',
     video: 'https://www.youtube.com/watch?v=m_QfnsvYJRw',
-    image: 'https://github.com/user-attachments/assets/6f5e0d7c-5144-4e39-a1ff-5bb79664bff1'
+    thumbnail: 'https://github.com/user-attachments/assets/6f5e0d7c-5144-4e39-a1ff-5bb79664bff1'
   },
   {
     title: 'Tournament Management',
@@ -27,7 +27,7 @@ const featuredProjects = [
     ],
     website: null,
     video: 'https://www.youtube.com/watch?v=PRxfJTVWaaw',
-    image: 'https://drive.google.com/thumbnail?id=1sJhQJu26w1cxDC7YCcRrf9sljbB_mj0y&sz=w1000'
+    thumbnail: 'https://drive.google.com/thumbnail?id=1sJhQJu26w1cxDC7YCcRrf9sljbB_mj0y&sz=w1000'
   },
   {
     title: 'Ekseli Spreadsheet',
@@ -38,7 +38,7 @@ const featuredProjects = [
     ],
     website: null,
     video: 'https://www.youtube.com/watch?v=7fK3-RTNm1g',
-    image: 'https://drive.google.com/thumbnail?id=1B2S2eADz875OulgB6t7gokikfOGJvQEc&sz=w1000'
+    thumbnail: 'https://drive.google.com/thumbnail?id=1B2S2eADz875OulgB6t7gokikfOGJvQEc&sz=w1000'
   },
   {
     title: 'The Quotes',
@@ -49,7 +49,7 @@ const featuredProjects = [
     ],
     website: 'https://mango-sea-01ee22003.6.azurestaticapps.net/',
     video: 'https://www.youtube.com/watch?v=VRGxnK3Gh9I',
-    image: 'https://previews.dropbox.com/p/thumb/ACvgc6SJiE0Cx4_RwaYLfAojkQtJ52-oUmA5nJUl6Timo9LbAXomejCxC03NrJFHinDQI4YJvgjsE4K3kWemVJd4ltVayNVhDe0gLipl09xQ5Z3jmJwJ7MabAZ4Bt0Bd62Ew1h_48v9mJ3b352ZpO9cls8Q17HlLLlDuqmTkbC56pu4QY2t8GTx72ZoESEkKq6BtBxRTNRukFyKd0itmsk1LMhktmKSyfmxaaUPxWIrJzZ75ztI0b6HqwQSsT7jLbxcH8J0urll12NPwFkAcScLzC6PoS4OluYwM7IPTbXGgj889-8qFvf1K0ucmjY94JudvUwRgT8_xHA9mIVaM_Hjj/p.png'
+    thumbnail: 'https://drive.google.com/thumbnail?id=17WZnQUk6b6ItRkHXAFvBuWMyvS-VbZeq&sz=w1000'
   },
 ];
 
@@ -69,7 +69,7 @@ const ProjectsSection = () => {
             <Card key={index} className="hover:shadow-lg transition-shadow animate-fade-in group">
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-t-lg">
                 <img
-                  src={project.image}
+                  src={project.thumbnail}
                   alt={project.title}
                   className="w-full h-full object-cover rounded-t-lg"
                 />
