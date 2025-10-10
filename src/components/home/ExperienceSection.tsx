@@ -10,7 +10,8 @@ const experiences = [
     description: '· Design PostgreSQL database & develop REST API server using ASP.NET Core Web API. \
     \n· Implement some UI components in React and support connecting client requests to the server. \
     \n· Deploy both server & client applications to the Internet with a paid domain (for the client). \
-    \n· Manage tasks in the application development team.',
+    \n· Manage tasks in the application development team. \
+    \n→ About 20 candidates and businesses have joined and 500 LinkedIn usershave followed the LinkedIn page.',
     technologies: ['C#', 'ASP.NET', 'TypeScript', 'React', 'PostgreSQL', 'Visual Studio', 'VS Code', 'Azure DevOps']
   },
   {

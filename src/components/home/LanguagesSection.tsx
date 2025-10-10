@@ -15,8 +15,8 @@ const languages = [
   },
   {
     language: 'Finnish',
-    proficiency: 'A1',
-    level: (1 / 6) * 100
+    proficiency: 'A2',
+    level: (2 / 6) * 100
   },
 ];
 

@@ -26,7 +26,7 @@ const technicalSkills = [
   {
     category: 'Tools',
     icon: Wrench,
-    skills: ['Jira', 'Confluence', 'Notion', 'Visual Studio', 'VS Code', 'IntelliJ', 'Linux & CLI', 'Git' , 'GitHub']
+    skills: ['Jira', 'Confluence', 'Notion', 'Visual Studio', 'VS Code', 'Jupyter Notebook', 'IntelliJ', 'Linux & CLI', 'Git' , 'GitHub']
   }
 ];
 
