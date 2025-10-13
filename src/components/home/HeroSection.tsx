@@ -23,7 +23,7 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="https://drive.google.com/file/d/1JXclM2SNQBMaisK1_7E9tFLjyBI6jS5C/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/drive/folders/1xwpcIy-7v788dXCfuXBjL45yEYY48e5P?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="group">
                   <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                   Download CV/Resume
