@@ -14,7 +14,7 @@ const educationData = [
     degree: 'Bachelor of Engineering in Information Technology',
     university: 'Vaasa University of Applied Sciences (VAMK)',
     duration: '2020 - 2024',
-    major: 'Software Development',
+    major: 'Software Engineering',
     minor: 'Network & Telecommunication',
     courses: ['Software Engineering Project', '.NET programming'],
     gpa: '4.39/5.0',
