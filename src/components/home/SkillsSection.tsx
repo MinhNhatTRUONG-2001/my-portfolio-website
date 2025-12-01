@@ -1,22 +1,37 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Users, Database, Cloud, Monitor, Server, Wrench } from 'lucide-react';
+import { Users, Database, Cloud, Monitor, Server, Wrench, ChartColumn, SquareCode, Cpu } from 'lucide-react';
 
 const technicalSkills = [
   {
+    category: 'Programming languages',
+    icon: SquareCode,
+    skills: ['Python', 'C#', 'TypeScript', 'JavaScript', 'Java', 'Scala']
+  },
+  {
+    category: 'AI/ML',
+    icon: Cpu,
+    skills: ['PyTorch', 'NLTK', 'scikit-learn']
+  },
+  {
     category: 'Frontend',
     icon: Monitor,
-    skills: ['React', 'Angular', 'TypeScript', 'React Native', 'JavaScript', 'HTML5 & CSS3', 'Blazor WebAssembly', 'WPF', 'Android (Java)']
+    skills: ['React', 'React Native', 'Angular', 'WPF', 'Android (Native)', 'Blazor WASM']
   },
   {
     category: 'Backend',
     icon: Server,
-    skills: ['Node.js (Express.js, NestJS)', 'Python (Flask)', 'C#', 'ASP.NET Core (MVC, Web API)', 'EF Core', 'REST API', 'GraphQL', 'Java (Spring Boot)']
+    skills: ['Node.js (Express.js, NestJS)', 'Flask', '.NET Core (MVC, Web API)', 'EF Core', 'REST API', 'GraphQL', 'Spring Boot']
   },
   {
     category: 'Databases',
     icon: Database,
-    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'MariaDB', 'SQLite', 'Firebase']
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'MariaDB', 'Firebase']
+  },
+  {
+    category: 'Data engineering & analytics',
+    icon: ChartColumn,
+    skills: ['Apache Spark', 'NumPy', 'Pandas', 'Matplotlib']
   },
   {
     category: 'DevOps & Cloud',
@@ -26,16 +41,11 @@ const technicalSkills = [
   {
     category: 'Tools',
     icon: Wrench,
-    skills: ['Jira', 'Confluence', 'Notion', 'Visual Studio', 'VS Code', 'Jupyter Notebook', 'IntelliJ', 'Linux & CLI', 'Git' , 'GitHub']
+    skills: ['Jira', 'Confluence', 'Notion', 'Visual Studio', 'VS Code', 'Jupyter Notebook', 'IntelliJ', 'Linux', 'Git' , 'GitHub']
   }
 ];
 
-const nonTechnicalSkills = [
-  'Problem Solving',
-  'Critical Thinking',
-  'Project Management',
-  'Agile/Scrum',
-];
+const nonTechnicalSkills = ['Problem Solving', 'Critical Thinking', 'Project Management', 'Agile/Scrum'];
 
 const SkillsSection = () => {
   return (
@@ -51,7 +61,7 @@ const SkillsSection = () => {
         {/* Technical Skills */}
         <div className="mb-12">
           <h3 className="text-2xl font-semibold mb-6 text-center">Technical Skills</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {technicalSkills.map((skillGroup, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow animate-fade-in">
                 <CardHeader className="text-center">

@@ -7,7 +7,8 @@ const educationData = [
     degree: 'Master of Science in Data Science',
     university: 'Tampere University',
     duration: '2025 - present',
-    major: 'Machine Learning',
+    major: 'AI/Machine Learning',
+    courses: ['Deep Learning']
   },
   {
     degree: 'Bachelor of Engineering in Information Technology',
@@ -15,6 +16,7 @@ const educationData = [
     duration: '2020 - 2024',
     major: 'Software Development',
     minor: 'Network & Telecommunication',
+    courses: ['Software Engineering Project', '.NET programming'],
     gpa: '4.39/5.0',
     certificateFileUrl: 'https://drive.google.com/file/d/1G1b5YjGhNI-D0H9Ax9mvbVMMQJyyL5lQ/view'
   },
@@ -63,6 +65,13 @@ const EducationSection = () => {
                       <Award className="h-5 w-5 text-primary mt-0.5" />
                       <div>
                         <p className="font-medium">Minor: {edu.minor}</p>
+                      </div>
+                    </div>
+                  }
+                  {edu.courses &&
+                    <div className="flex items-start space-x-2">
+                      <div>
+                        <p className="font-medium">Key courses: {edu.courses.join(', ')}</p>
                       </div>
                     </div>
                   }

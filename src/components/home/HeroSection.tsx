@@ -15,11 +15,12 @@ const HeroSection = () => {
               <span className="gradient-text">Nhat Truong</span>
             </h1>
             <h2 className="text-xl sm:text-2xl text-muted-foreground mb-6">
-              Software Engineer & Full-Stack Developer
+              Software Engineer / Data Engineer / Machine Learning Engineer
             </h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto lg:mx-0">
               Passionate software engineer, specializing in full-stack development. I build scalable web, desktop and mobile
-              applications and love solving complex technical challenges.
+              applications and love solving complex technical challenges. I also love exploring the meaning behind data and
+              building AI/machine learning models.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
