@@ -8,7 +8,7 @@ const educationData = [
     university: 'Tampere University',
     duration: '2025 - present',
     major: 'AI/Machine Learning',
-    courses: ['Deep Learning']
+    courses: ['Deep Learning', 'Data-Intensive Programming']
   },
   {
     degree: 'Bachelor of Engineering in Information Technology',

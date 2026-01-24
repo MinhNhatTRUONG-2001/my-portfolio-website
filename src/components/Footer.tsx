@@ -44,7 +44,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-6 pt-6 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Portfolio of Nhat Truong. All rights reserved.</p>
+          <p>&copy; 2025-{new Date().getFullYear()} Portfolio of Nhat Truong. All rights reserved.</p>
         </div>
       </div>
     </footer>

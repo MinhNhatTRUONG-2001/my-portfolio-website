@@ -3,8 +3,10 @@ import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Play, Code } from 'lucide-react';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-const allProjects = [
+
+const softwareProjects = [
   {
     title: 'Hangman Game',
     description: 'A classic word-guessing game where players try to guess a hidden English word within a certain number of guesses. The game includes hundreds of words from different topics.',
@@ -132,6 +134,39 @@ const allProjects = [
   },
 ];
 
+const aiProjects = [
+  {
+    title: 'Ball Image Classifier',
+    description: 'A CNN image classifier model that distinguishes six different ball types used in six sports.',
+    technologies: ['Python', 'PyTorch', 'CNN', 'Computer Vision', 'NumPy', 'Matplotlib', 'Jupyter Notebook'],
+    code: [
+      { url: 'https://github.com/MinhNhatTRUONG-2001/ball-image-classifier', label: null },
+    ],
+    video: null,
+    thumbnail: 'https://drive.google.com/thumbnail?id=19P-bCxnszSXH9st_Xg_dh0D7N5M_52jA&sz=w1000'
+  },
+  {
+    title: 'Spotify 2015 - 2025 85k',
+    description: 'Data analytics & Machine learning with \'Spotify 2015 - 2025 85k\' dataset',
+    technologies: ['Python', 'NumPy', 'Pandas', 'Matplotlib', 'scikit-learn', 'Jupyter Notebook'],
+    code: [
+      { url: 'https://github.com/MinhNhatTRUONG-2001/AI-ML-Projects/tree/main/spotify-2015-2025-85k', label: null },
+    ],
+    video: null,
+    thumbnail: 'https://storage.googleapis.com/kaggle-datasets-images/8913500/13984044/e6e84f44dcb0f650054c34ed553174dd/dataset-cover.jpg?t=2025-12-04-05-19-16'
+  },
+  {
+    title: 'Gymnasium Taxi v3',
+    description: 'Reinforcement learning implementation of Gymnasium\'s Taxi environment.',
+    technologies: ['Python', 'NumPy', 'Reinforcement learning', 'Q-learning'],
+    code: [
+      { url: 'https://github.com/MinhNhatTRUONG-2001/AI-ML-Projects/tree/main/Reinforcement%20Learning/gymnasium-taxi-v3', label: null },
+    ],
+    video: null,
+    thumbnail: 'https://gymnasium.farama.org/_images/taxi.gif'
+  },
+];
+
 const Projects = () => {
   return (
     <Layout>
@@ -147,75 +182,154 @@ const Projects = () => {
             </p>
           </div>
 
-          {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {allProjects.map((project, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 animate-fade-in group">
-                {/* Project Thumbnail Image/Placeholder */}
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-t-lg">
-                  {project.thumbnail &&
-                    <img
-                      src={project.thumbnail}
-                      alt={project.title}
-                      className="w-full h-full object-cover rounded-t-lg"
-                    />
-                  }
-                </div>
+          <Tabs defaultValue="ai" className="text-center">
+            <TabsList>
+              <TabsTrigger value="ai">AI/ML & Data</TabsTrigger>
+              <TabsTrigger value="software">Software Engineering</TabsTrigger>
+            </TabsList>
+            <TabsContent value="ai">
+              {/* Projects Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                {aiProjects.map((project, index) => (
+                  <Card key={index} className="hover:shadow-xl transition-all duration-300 animate-fade-in group">
+                    {/* Project Thumbnail Image/Placeholder */}
+                    <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-t-lg">
+                      {project.thumbnail &&
+                        <img
+                          src={project.thumbnail}
+                          alt={project.title}
+                          className="w-full h-full object-cover rounded-t-lg"
+                        />
+                      }
+                    </div>
 
-                <CardHeader>
-                  <CardTitle className="group-hover:text-primary transition-colors">
-                    {project.title}
-                  </CardTitle>
-                </CardHeader>
+                    <CardHeader>
+                      <CardTitle className="group-hover:text-primary transition-colors">
+                        {project.title}
+                      </CardTitle>
+                    </CardHeader>
 
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">{project.description}</p>
+                    <CardContent className="space-y-4">
+                      <p className="text-muted-foreground">{project.description}</p>
 
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-2 py-1 text-xs bg-primary/10 text-primary rounded border"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-2 py-1 text-xs bg-primary/10 text-primary rounded border"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
 
-                  {/* Action Buttons */}
-                  <div className="flex flex-wrap gap-2 pt-4">
-                    {project.code.map(c =>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={c.url} target="_blank" rel="noopener noreferrer">
-                          <Code className="mr-1 h-4 w-4" />
-                          Code {c.label ? `- ${c.label}` : ''}
-                        </a>
-                      </Button>
-                    )}
+                      {/* Action Buttons */}
+                      <div className="flex flex-wrap gap-2 pt-4">
+                        {project.code.map(c =>
+                          <Button variant="outline" size="sm" asChild>
+                            <a href={c.url} target="_blank" rel="noopener noreferrer">
+                              <Code className="mr-1 h-4 w-4" />
+                              Code {c.label ? `- ${c.label}` : ''}
+                            </a>
+                          </Button>
+                        )}
 
-                    {project.website && (
-                      <Button size="sm" asChild>
-                        <a href={project.website} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="mr-1 h-4 w-4" />
-                          Website
-                        </a>
-                      </Button>
-                    )}
+                        {/* {project.website && (
+                          <Button size="sm" asChild>
+                            <a href={project.website} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="mr-1 h-4 w-4" />
+                              Website
+                            </a>
+                          </Button>
+                        )} */}
 
-                    {project.video && (
-                      <Button variant="secondary" size="sm" asChild>
-                        <a href={project.video} target="_blank" rel="noopener noreferrer">
-                          <Play className="mr-1 h-4 w-4" />
-                          Demo Video
-                        </a>
-                      </Button>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                        {project.video && (
+                          <Button variant="secondary" size="sm" asChild>
+                            <a href={project.video} target="_blank" rel="noopener noreferrer">
+                              <Play className="mr-1 h-4 w-4" />
+                              Demo Video
+                            </a>
+                          </Button>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="software">
+              {/* Projects Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                {softwareProjects.map((project, index) => (
+                  <Card key={index} className="hover:shadow-xl transition-all duration-300 animate-fade-in group">
+                    {/* Project Thumbnail Image/Placeholder */}
+                    <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-t-lg">
+                      {project.thumbnail &&
+                        <img
+                          src={project.thumbnail}
+                          alt={project.title}
+                          className="w-full h-full object-cover rounded-t-lg"
+                        />
+                      }
+                    </div>
+
+                    <CardHeader>
+                      <CardTitle className="group-hover:text-primary transition-colors">
+                        {project.title}
+                      </CardTitle>
+                    </CardHeader>
+
+                    <CardContent className="space-y-4">
+                      <p className="text-muted-foreground">{project.description}</p>
+
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-2 py-1 text-xs bg-primary/10 text-primary rounded border"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Action Buttons */}
+                      <div className="flex flex-wrap gap-2 pt-4">
+                        {project.code.map(c =>
+                          <Button variant="outline" size="sm" asChild>
+                            <a href={c.url} target="_blank" rel="noopener noreferrer">
+                              <Code className="mr-1 h-4 w-4" />
+                              Code {c.label ? `- ${c.label}` : ''}
+                            </a>
+                          </Button>
+                        )}
+
+                        {project.website && (
+                          <Button size="sm" asChild>
+                            <a href={project.website} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="mr-1 h-4 w-4" />
+                              Website
+                            </a>
+                          </Button>
+                        )}
+
+                        {project.video && (
+                          <Button variant="secondary" size="sm" asChild>
+                            <a href={project.video} target="_blank" rel="noopener noreferrer">
+                              <Play className="mr-1 h-4 w-4" />
+                              Demo Video
+                            </a>
+                          </Button>
+                        )}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+          </Tabs>
 
           {/* Call to Action */}
           <div className="text-center mt-16">

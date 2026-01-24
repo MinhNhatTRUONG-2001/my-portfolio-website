@@ -6,7 +6,7 @@ const technicalSkills = [
   {
     category: 'Programming languages',
     icon: SquareCode,
-    skills: ['Python', 'C#', 'TypeScript', 'JavaScript', 'Java', 'Scala']
+    skills: ['Python', 'C#', 'TypeScript', 'JavaScript', 'Java', 'Scala', 'R']
   },
   {
     category: 'AI/ML',
@@ -31,7 +31,7 @@ const technicalSkills = [
   {
     category: 'Data engineering & analytics',
     icon: ChartColumn,
-    skills: ['Apache Spark', 'NumPy', 'Pandas', 'Matplotlib']
+    skills: ['Apache Spark (w/ Databricks)', 'NumPy', 'Pandas', 'Matplotlib']
   },
   {
     category: 'DevOps & Cloud',
