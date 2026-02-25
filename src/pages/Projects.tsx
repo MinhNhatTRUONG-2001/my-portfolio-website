@@ -146,6 +146,16 @@ const aiProjects = [
     thumbnail: 'https://drive.google.com/thumbnail?id=19P-bCxnszSXH9st_Xg_dh0D7N5M_52jA&sz=w1000'
   },
   {
+    title: 'Neural Language Models',
+    description: 'Compilation of NLP exercises during studying Neural Language Models course.',
+    technologies: ['Python', 'Jupyter Notebook', 'Hugging Face', 'NLP', 'LLM', 'PyTorch', 'LSTM', 'RAG', 'BERT', 'BART', 'NER', 'Model Quantization', 'Machine Translation', 'Sentiment Analysis'],
+    code: [
+      { url: 'https://github.com/MinhNhatTRUONG-2001/AI-ML-Projects/tree/main/Neural-Language-Models-NLP', label: null },
+    ],
+    video: null,
+    thumbnail: 'https://drive.google.com/thumbnail?id=1swjV3vil_MlYsCdGBYdYMav0_59rx9RK&sz=w1000'
+  },
+  {
     title: 'Spotify 2015 - 2025 85k',
     description: 'Data analytics & Machine learning with \'Spotify 2015 - 2025 85k\' dataset',
     technologies: ['Python', 'NumPy', 'Pandas', 'Matplotlib', 'scikit-learn', 'Jupyter Notebook'],
