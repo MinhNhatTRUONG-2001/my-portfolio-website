@@ -166,6 +166,16 @@ const aiProjects = [
     thumbnail: 'https://storage.googleapis.com/kaggle-datasets-images/8913500/13984044/e6e84f44dcb0f650054c34ed553174dd/dataset-cover.jpg?t=2025-12-04-05-19-16'
   },
   {
+    title: 'Data-Intensive Programming Group Assignment',
+    description: 'My works in the group assignment of Data-Intensive Programming course at Tampere University.',
+    technologies: ['Scala', 'Apache Spark', 'Databricks'],
+    code: [
+      { url: 'https://github.com/MinhNhatTRUONG-2001/dip-group-assignment', label: null },
+    ],
+    video: null,
+    thumbnail: null
+  },
+  {
     title: 'Gymnasium Taxi v3',
     description: 'Reinforcement learning implementation of Gymnasium\'s Taxi environment.',
     technologies: ['Python', 'NumPy', 'Reinforcement learning', 'Q-learning'],
