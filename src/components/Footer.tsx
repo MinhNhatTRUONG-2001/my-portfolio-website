@@ -28,7 +28,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/minh-nhat-truong-97459b223/"
+              href="https://www.linkedin.com/in/i-am-nhat-truong/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 hover:bg-primary/10 rounded-lg transition-colors"

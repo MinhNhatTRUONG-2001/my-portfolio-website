@@ -105,7 +105,7 @@ const Contact = () => {
                         </Button>
                         
                         <Button variant="outline" className="w-full justify-start" asChild>
-                          <a href="https://www.linkedin.com/in/minh-nhat-truong-97459b223/" target="_blank" rel="noopener noreferrer">
+                          <a href="https://www.linkedin.com/in/i-am-nhat-truong/" target="_blank" rel="noopener noreferrer">
                             <img
                               src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
                               alt="LinkedIn"
